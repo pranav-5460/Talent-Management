@@ -1,0 +1,52 @@
+/* src/pages/Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    flex-direction: column; /* Default to column layout for smaller screens */
+  }
+  
+  .login-image {
+    width: 100%;
+    background: url('../assets/reg.png') no-repeat center center;
+    background-size: cover;
+    display: none; /* Hide on smaller screens */
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .forgot-password {
+    float: right;
+  }
+  
+  @media (min-width: 768px) {
+    .login-container {
+      flex-direction: row; /* Change to row layout for larger screens */
+    }
+  
+    .login-image {
+      display: block;
+      flex: 1;
+      height: 100vh;
+    }
+  
+    .login-form {
+      flex: 1;
+      margin: 2rem;
+    }
+  }
+  

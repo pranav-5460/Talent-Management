@@ -1,0 +1,48 @@
+/* src/pages/Register.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    flex-direction: column; /* Default to column layout for smaller screens */
+  }
+  
+  .register-image {
+    width: 100%;
+    background: url('../assets/reg.png') no-repeat center center;
+    background-size: cover;
+    display: none; /* Hide on smaller screens */
+  }
+  
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .register-container {
+      flex-direction: row; /* Change to row layout for larger screens */
+    }
+  
+    .register-image {
+      display: block;
+      flex: 1;
+      height: 100vh;
+    }
+  
+    .register-form {
+      flex: 1;
+      margin: 2rem;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+/* Styles for the JobVacancies component */
+.job-vacancies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .job-vacancy {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .job-vacancy h3 {
+    margin-top: 0;
+  }
+  
+  .job-vacancy p {
+    flex-grow: 1;
+  }
+  
+  .job-vacancy .btn {
+    margin-top: 10px;
+    align-self: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .job-vacancies-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .job-vacancies-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
